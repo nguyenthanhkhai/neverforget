@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap&subset=vietnamese" rel="stylesheet" />
+  <title>Gửi Hugo</title>
+  <style>
+    :root {
+      --bg1: #f6efe7;
+      --bg2: #efe3d5;
+      --card: rgba(255, 252, 248, 0.88);
+      --text: #4e3d34;
+      --muted: #8a6f61;
+      --accent: #b7866b;
+      --line: rgba(183, 134, 107, 0.28);
+      --shadow: 0 18px 50px rgba(105, 76, 60, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Noto Serif", "Times New Roman", "Liberation Serif", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.6), transparent 32%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 18px;
+    }
+
+    .letter {
+      width: min(860px, 100%);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+      padding: 42px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .letter::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.35), transparent 18%),
+        radial-gradient(circle at bottom right, rgba(183, 134, 107, 0.12), transparent 30%);
+      pointer-events: none;
+    }
+
+    .inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 0 0 8px;
+      font-weight: 600;
+      color: #6d4f42;
+    }
+
+    .subtitle {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      margin: 22px 0 28px;
+    }
+
+    p {
+      margin: 0 0 18px;
+      font-size: 1.08rem;
+      line-height: 1.95;
+      text-align: justify;
+    }
+
+    .signature {
+      margin-top: 34px;
+      text-align: right;
+      font-size: 1.12rem;
+      line-height: 1.8;
+      color: #6d4f42;
+    }
+
+    .signature strong {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+      .letter {
+        padding: 28px 20px;
+        border-radius: 18px;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.82;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="letter">
+    <section class="inner">
+      <div class="tag">Một lời nhắn gửi</div>
+      <h1>Chào, Hugo</h1>
+      <p class="subtitle">Đáng yêu và đáng quý.</p>
+
+      <div class="divider"></div>
+
+      <p>
+        Quyết định lần này, cả hai đã lựa chọn. Chắc là cũng chẳng có gì to tát đâu,
+        chỉ là mình lại về đúng vị trí, nơi mà suốt 6 năm qua mình vẫn sống tốt. Xa mặt,
+        hay cách lòng, suy cho cùng cũng chỉ là một phần của hành trình trưởng thành.
+        Mình chọn lùi lại một bước, không phải để trốn chạy, mà để giữ cho những gì đẹp
+        nhất giữa chúng mình không bị những vụn vặt của thực tại làm vẩn đục.
+      </p>
+
+      <p>
+        Nhắc về chúng mình, là nhắc để nhớ về một phần tuổi thơ chung lối. Đó là những ngày tháng
+        mà cả thế giới chỉ bé bằng một vòng tay, nơi niềm vui thật thà và nỗi buồn cũng trong veo
+        như giọt sương sớm. Bạn là người đã cùng mình đi qua những năm tháng ngây ngô ấy, là người
+        chứng kiến mình của một thời vụng dại nhất. Để rồi, chúng mình lạc mất nhau suốt 6 năm dài.
+        6 năm – đủ để một đứa trẻ lớn lên, đủ để những vết sẹo cũ lành lại và cũng đủ để chúng mình
+        trở thành những người lạ từng quen. Khi gặp lại nhau sau ngần ấy thời gian, mình đã trân trọng
+        biết bao từng cái khoảnh khắc mà mình đã kề cạnh bên nhau, những sự quan tâm chăm sóc, yêu thương
+        san sẻ với nhau. Cảm ơn bạn nhỏ vì đã cho mình thấy lại hình bóng của tâm hồn tri kỷ năm xưa,
+        dù giờ đây mỗi người đã mang một lớp vỏ bọc riêng, một nỗi niềm riêng.
+      </p>
+
+      <p>
+        Hugo này, dù không còn đi cạnh nhau để nhắc bạn mặc thêm áo ấm khi trời trở gió, hay cùng bạn
+        chia sẻ những bữa cơm muộn, mình vẫn muốn gửi gắm vào đây tất cả sự chân thành của mình. Bạn nhỏ
+        phải giữ gìn sức khỏe nhé. Đừng cứ mãi ngược đãi bản thân bằng những đêm dài trằn trọc hay những
+        bữa ăn vội vã. Mình thương cái cách bạn luôn gồng gánh mọi thứ, nhưng xin bạn hãy nhớ rằng, để đi
+        được đường dài, trái tim và cơ thể bạn cần được nâng niu, được trân trọng.
+      </p>
+
+      <p>
+        Mình sẽ luôn cầu nguyện ông trời sẽ nhẹ nhàng với bạn, cũng mong bạn hãy học cách rũ bỏ bớt những
+        tiêu cực đang đè nặng lên đôi vai bé nhỏ. Đừng để những nỗi buồn không tên hay những muộn phiền của
+        quá khứ làm mờ đi đôi mắt vốn dĩ long lanh đáng yêu của bạn. Mình mong đôi bàn tay đã từng cố gắng
+        xoa dịu nỗi đau của mình sẽ được chạm vào danh vọng, đủ kiên cường để mà nắm lấy hạnh phúc. Bạn nhỏ
+        của mình xứng đáng được bình yên, được thở những nhịp thở nhẹ nhõm thay vì cứ mãi chìm trong những suy
+        tư u uất. Hãy cứ giữ lấy cái tôi riêng biệt của mình, nhưng đừng khép mình lại với những điều tốt đẹp
+        đang chờ phía trước. Đừng vì sợ một lần đau mà từ chối một lần được sưởi ấm. Thế giới này đôi khi thật
+        tàn nhẫn, nhưng vẫn luôn có những nhành hoa nở muộn, những chén trà thơm và những tâm hồn đồng điệu
+        đang đợi bạn mở lòng để bước vào.
+      </p>
+
+      <p>
+        Chúng mình đã là một phần ký ức thật đẹp của nhau, từ những ngày thơ dại cho đến khi gặp lại sau 6 năm
+        cách biệt. Những gì đã trải qua, mình xin phép gói lại thành một kỷ niệm trân quý, để mỗi khi nhớ về,
+        mình chỉ thấy những điều thân thương nhất. Bạn đã từng là tri kỷ, là người bạn nhỏ mà mình dành rất nhiều
+        tình cảm, và điều đó sẽ mãi không thay đổi dù chúng mình có đứng ở hai phía của cuộc đời.
+      </p>
+
+      <p>
+        Lần này về lại vị trí cũ, mong bạn sẽ thấy lòng dịu lại. Không còn những mong cầu xa xôi, mình chỉ cầu chúc
+        cho Hugo luôn được che chở, luôn tìm thấy ánh sáng ngay cả trong những ngày mây mù nhất.
+      </p>
+
+      <p>
+        Chào nhé, Hugo – bạn nhỏ tri kỷ của mình.
+      </p>
+
+      <div class="signature">
+        <div>Thương mến,</div>
+        <strong>Khai.</strong>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
